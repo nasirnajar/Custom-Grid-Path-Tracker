@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Grid Path Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1>Animated Grid Path Finder</h1>
+
+
+    <div class="controls">
+      <label>Rows: <input type="number" id="rows" min="1" /></label>
+      <label>Cols: <input type="number" id="cols" min="1" /></label>
+         <hr>
+       <label> Start Row : <input type="number" id="start_row" placeholder="1-BASED" min="1"/></label>
+      <label> Start Col : <input type="number" id="start_col" placeholder="1-BASED" min="1"/></label>
+            <hr>
+       <label> End Row : <input type="number" id="end_row"  placeholder="1-BASED" min="1"/></label>
+      <label> End Col : <input type="number" id="end_col" placeholder="1-BASED" min="1"/></label>
+      <br />
+      <button onclick="startAnimation()">Start Animation</button>
+    
+    </div>
+
+    <p id="result"></p>
+
+    <div class="grid-wrapper">
+      <div id="gridContainer" class="grid"></div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
